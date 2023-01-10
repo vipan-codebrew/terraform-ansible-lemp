@@ -17,3 +17,14 @@ fi
 git clone https://github.com/harwi007/ansible-lemp.git
 
 cd ansible-lemp && ansible-playbook components.yaml
+
+echo "going to ansible folder"
+cd /home/ubuntu/terraform-ansible-lemp
+rm -rf  ansible-lemp
+
+echo "ansible git clone remove"
+
+apt remove ansible -y
+apt autoclean &&  apt autoremove -y
+echo "Ansible uninstalled"
+
