@@ -8,4 +8,4 @@ vpc_cidr           = "172.168.96.0/22"
 key_name           = "lemp"
 
 # personal laptop public ip for debugging and SSH purpose
-personal_laptop_ip = "115.240.126.90"
+personal_laptop_ip = "112.196.88.218"

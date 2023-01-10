@@ -39,7 +39,7 @@ variable "root_volume_size" {
 
 variable "multi_az_db" {
   type    = bool
-  default = true
+  default = false
 }
 
 variable "personal_laptop_ip" {

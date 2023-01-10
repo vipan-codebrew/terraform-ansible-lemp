@@ -29,7 +29,7 @@ resource "aws_instance" "lempsetup" {
   root_block_device {
     volume_size           = var.root_volume_size
     delete_on_termination = true
-    encrypted             = true
+    encrypted             = false
     volume_type           = "gp3"
 
     tags = merge({
@@ -42,7 +42,7 @@ resource "aws_instance" "lempsetup" {
 
 
   tags = merge({
-    Name = "Lamp-${count.index}-${terraform.workspace}"
+    Name = "harwi-${count.index}-${terraform.workspace}"
   }, var.default_tags)
 }
  
